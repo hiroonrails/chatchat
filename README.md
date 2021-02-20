@@ -20,6 +20,7 @@
 | -------- | ----------- | ----------- |
 | name     | string      | null: false |
 
+### Association
 - has_many :room_users
 - has_many :users, through: :room_users
 - has_many :messages
@@ -32,6 +33,7 @@
 | user     | references  | null: false, foreign_key: true |
 | room     | references  | null: false, foreign_key: true |
 
+### Association
 - belongs_to :user
 - belongs_to :room
 
@@ -43,5 +45,6 @@
 | user     | references  | null: false, foreign_key: true |
 | room     | references  | null: false, foreign_key: true |
 
+### Association
 - belongs_to :user
 - belongs_to :room
